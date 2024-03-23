@@ -97,7 +97,7 @@
     },
     "OpnScriptURI": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/dmauser/opnazure/master/scripts/",
+      "defaultValue": "https://raw.githubusercontent.com/MakerHe/dmauser-opnazure/master/scripts/",
       "metadata": {
         "description": "URI for Custom OPN Script and Config"
       }
@@ -111,7 +111,7 @@
     },
     "OpnVersion": {
       "type": "string",
-      "defaultValue": "23.1",
+      "defaultValue": "24.1",
       "metadata": {
         "description": "OPN Version"
       }
@@ -962,8 +962,8 @@
                   },
                   "imageReference": {
                     "publisher": "thefreebsdfoundation",
-                    "offer": "freebsd-13_1",
-                    "sku": "13_1-release",
+                    "offer": "freebsd-13_2",
+                    "sku": "13_2-release",
                     "version": "latest"
                   }
                 },
@@ -972,9 +972,9 @@
                 }
               },
               "plan": {
-                "name": "13_1-release",
+                "name": "13_2-release",
                 "publisher": "thefreebsdfoundation",
-                "product": "freebsd-13_1"
+                "product": "freebsd-13_2"
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('trustedNicName'))]",
@@ -1427,8 +1427,8 @@
                   },
                   "imageReference": {
                     "publisher": "thefreebsdfoundation",
-                    "offer": "freebsd-13_1",
-                    "sku": "13_1-release",
+                    "offer": "freebsd-13_2",
+                    "sku": "13_2-release",
                     "version": "latest"
                   }
                 },
@@ -1437,9 +1437,9 @@
                 }
               },
               "plan": {
-                "name": "13_1-release",
+                "name": "13_2-release",
                 "publisher": "thefreebsdfoundation",
-                "product": "freebsd-13_1"
+                "product": "freebsd-13_2"
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('trustedNicName'))]",
@@ -1893,8 +1893,8 @@
                   },
                   "imageReference": {
                     "publisher": "thefreebsdfoundation",
-                    "offer": "freebsd-13_1",
-                    "sku": "13_1-release",
+                    "offer": "freebsd-13_2",
+                    "sku": "13_2-release",
                     "version": "latest"
                   }
                 },
@@ -1903,9 +1903,9 @@
                 }
               },
               "plan": {
-                "name": "13_1-release",
+                "name": "13_2-release",
                 "publisher": "thefreebsdfoundation",
-                "product": "freebsd-13_1"
+                "product": "freebsd-13_2"
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('trustedNicName'))]",
