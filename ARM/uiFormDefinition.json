@@ -112,8 +112,8 @@
               "name": "OpnVersion",
               "type": "Microsoft.Common.TextBox",
               "label": "OPNSense Version to deploy",
-              "toolTip": "OPNsense Releases. Latest: 23.1, 23.7 Reference: https://docs.opnsense.org/releases.html",
-              "defaultValue": "23.7"
+              "toolTip": "OPNsense Releases. Latest: 23.1, 23.7, 24.1 Reference: https://docs.opnsense.org/releases.html",
+              "defaultValue": "24.1"
             },
             {
               "name": "WALinuxVersion",
