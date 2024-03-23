@@ -43,13 +43,13 @@ param existingTrustedSubnetName string = ''
 param PublicIPAddressSku string = 'Standard'
 
 @sys.description('URI for Custom OPN Script and Config')
-param OpnScriptURI string = 'https://raw.githubusercontent.com/dmauser/opnazure/master/scripts/'
+param OpnScriptURI string = 'https://raw.githubusercontent.com/MakerHe/dmauser-opnazure/master/scripts/'
 
 @sys.description('Shell Script to be executed')
 param ShellScriptName string = 'configureopnsense.sh'
 
 @sys.description('OPN Version')
-param OpnVersion string = '23.1'
+param OpnVersion string = '24.1'
 
 @sys.description('Azure WALinux agent Version')
 param WALinuxVersion string = '2.9.1.1'
