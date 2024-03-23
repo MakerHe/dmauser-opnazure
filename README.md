@@ -2,28 +2,28 @@
 
 CI Name | Actions Workflow | CI Status |
 |--------|--------|--------|
-| BicepBuild | [bicepBuild.yml](./.github/workflows/bicepBuild.yml) | [![bicepBuildCI](https://github.com/dmauser/opnazure/actions/workflows/bicepBuild.yml/badge.svg?branch=dev)](https://github.com/dmauser/opnazure/actions/workflows/bicepBuild.yml) |
-| Deployment Checker - Active Active | [deploymentChecker-active-active.yml](./.github/workflows/deploymentChecker-active-active.yml) | [![deploymentCheckeractiveactiveactiveCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml) |
-| Deployment Checker - two nics | [deploymentChecker-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckertwonicsCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-two-nics.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-two-nics.yml) |
-| Deployment Checker - new vnet Active Active | [deploymentChecker-newvnet-active-active.yml](./.github/workflows/deploymentChecker-newvnet-active-active.yml) | [![deploymentCheckeractivenewvnetactiveactiveCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-active-active.yml) |
-| Deployment Checker - new vnet two nics | [deploymentChecker-newvnet-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckernewvnettwonicsCI](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml/badge.svg?branch=master)](https://github.com/dmauser/opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml) |
+| BicepBuild | [bicepBuild.yml](./.github/workflows/bicepBuild.yml) | [![bicepBuildCI](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/bicepBuild.yml/badge.svg?branch=master)](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/bicepBuild.yml) |
+| Deployment Checker - Active Active | [deploymentChecker-active-active.yml](./.github/workflows/deploymentChecker-active-active.yml) | [![deploymentCheckeractiveactiveactiveCI](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-active-active.yml) |
+| Deployment Checker - two nics | [deploymentChecker-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckertwonicsCI](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-two-nics.yml/badge.svg?branch=master)](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-two-nics.yml) |
+| Deployment Checker - new vnet Active Active | [deploymentChecker-newvnet-active-active.yml](./.github/workflows/deploymentChecker-newvnet-active-active.yml) | [![deploymentCheckeractivenewvnetactiveactiveCI](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-active-active.yml/badge.svg?branch=master)](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-active-active.yml) |
+| Deployment Checker - new vnet two nics | [deploymentChecker-newvnet-two-nics.yml](./.github/workflows/deploymentChecker-two-nics.yml) | [![deploymentCheckernewvnettwonicsCI](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml/badge.svg?branch=master)](https://github.com/MakerHe/dmauser-opnazure/actions/workflows/deploymentChecker-newvnet-two-nics.yml) |
 
 **Deployment Wizard**
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2Fbicep%2FuiFormDefinition.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMakerHe%2Fdmauser-opnazure%2Fmaster%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FMakerHe%2Fdmauser-opnazure%2Fmaster%2Fbicep%2FuiFormDefinition.json)
 
 The template allows you to deploy an OPNsense Firewall VM using the opnsense-bootsrtap installation method. It creates an FreeBSD VM, does a silent install of OPNsense using a modified version of opnsense-bootstrap.sh with the settings provided.
 
-OPNSense is based in FreeBSD what is the official OS image publisher in Azure. This template deploys a FreeBSD 13.1 VM and installs OPNSense using the opnsense-bootstrap installation method. For the first deployment in an Azure Subscription it's ***required to accept the legal terms*** of the Offer with PublisherId: 'thefreebsdfoundation', OfferId: 'freebsd-13_1'.
+OPNSense is based in FreeBSD what is the official OS image publisher in Azure. This template deploys a FreeBSD 13.2 VM and installs OPNSense using the opnsense-bootstrap installation method. For the first deployment in an Azure Subscription it's ***required to accept the legal terms*** of the Offer with PublisherId: 'thefreebsdfoundation', OfferId: 'freebsd-13_2'.
 
 You can accept it using either Azure CLI or Azure PowerShell as follow:
 
 ```bash
-az vm image terms accept --urn thefreebsdfoundation:freebsd-13_1:13_1-release:13.1.0 -o none
+az vm image terms accept --urn thefreebsdfoundation:freebsd-13_2:13_2-release:13.2.0 -o none
 ```
 
 ```powershell
-Get-AzMarketplaceTerms -Publisher 'thefreebsdfoundation' -Product 'freebsd-13_1' -Name '13_1-release' -OfferType 'latest' | Set-AzMarketplaceTerms -Accept
+Get-AzMarketplaceTerms -Publisher 'thefreebsdfoundation' -Product 'freebsd-13_2' -Name '13_2-release' -OfferType 'latest' | Set-AzMarketplaceTerms -Accept
 ```
 
 The login credentials are set during the installation process to:
@@ -37,6 +37,12 @@ After deployment, you can go to <https://PublicIP>, then input the user and pass
 In case of Active-Active the URL should be <https://PublicIP:50443> for Primary server and <https://PublicIP:50444> for Secondary server.
 
 ## Updates
+
+## Mar-2024
+
+- Updated FreeBSD to 13.2
+- Added support to OPNsense 24.1 (set as default version)
+- Enable Boot diagnostics with managed storage account, change primary console from video to serial.
 
 ## Nov-2023
 
@@ -127,7 +133,7 @@ Build custom deployment form
 
 ## Feedbacks
 
-Please use Github [issues tab](https://github.com/dmauser/opnazure/issues) to provide feedback.
+Please use Github [issues tab](https://github.com/MakerHe/dmauser-opnazure/issues) to provide feedback.
 
 ## Credits
 
