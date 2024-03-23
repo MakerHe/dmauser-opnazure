@@ -10,7 +10,7 @@ CI Name | Actions Workflow | CI Status |
 
 **Deployment Wizard**
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2Fbicep%2FuiFormDefinition.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMakerHe%2Fdmauser-opnazure%2Fdev%2FARM%2Fmain.json%3F/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FMakerHe%2Fdmauser-opnazure%2Fdev%2Fbicep%2FuiFormDefinition.json)
 
 The template allows you to deploy an OPNsense Firewall VM using the opnsense-bootsrtap installation method. It creates an FreeBSD VM, does a silent install of OPNsense using a modified version of opnsense-bootstrap.sh with the settings provided.
 
@@ -37,6 +37,12 @@ After deployment, you can go to <https://PublicIP>, then input the user and pass
 In case of Active-Active the URL should be <https://PublicIP:50443> for Primary server and <https://PublicIP:50444> for Secondary server.
 
 ## Updates
+
+## Mar-2024
+
+- Updated FreeBSD to 13.2
+- Added support to OPNsense 24.1 (set as default version)
+- Enable Boot diagnostics with managed storage account, change primary console from video to serial.
 
 ## Nov-2023
 
